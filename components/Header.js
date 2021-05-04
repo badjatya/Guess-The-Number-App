@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
   headerContainer: {
     width: "100%",
     height: 100,
-    backgroundColor: "#ffdde1",
+    backgroundColor: "#f7287b",
     alignItems: "center",
     justifyContent: "center",
   },
