@@ -6,7 +6,7 @@ const StartGameScreen = (props) => {
     <View style={styles.screen}>
       <Text style={styles.title}>Start Game!</Text>
       <View style={styles.inputContainer}>
-        <Text style={styles.title}>Enter a Number</Text>
+        <Text>Enter a Number</Text>
         <TextInput />
         <View style={styles.buttonContainer}>
           <Button title="Reset" onPress={() => {}} />
@@ -23,11 +23,27 @@ const styles = StyleSheet.create({
     padding: 10,
     alignItems: "center",
   },
-  title: {},
-  inputContainer: {},
+  title: {
+    fontSize: 20,
+    marginVertical: 10,
+  },
+  inputContainer: {
+    width: 300,
+    maxWidth: "80%",
+    alignItems: "center",
+    shadowColor: "black",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowRadius: 6,
+    shadowOpacity: 0.26,
+  },
   buttonContainer: {
     flexDirection: "row",
-    alignItems: "center",
+    width: "100%",
+    justifyContent: "space-between",
+    paddingHorizontal: 15,
   },
 });
 
