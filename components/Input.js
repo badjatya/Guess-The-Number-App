@@ -5,4 +5,6 @@ const Input = (props) => {
   return <TextInput {...props} />;
 };
 
+const styles = StyleSheet.create({});
+
 export default Input;
