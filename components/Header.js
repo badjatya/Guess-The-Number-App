@@ -22,6 +22,7 @@ const styles = StyleSheet.create({
   headerTitle: {
     fontSize: 18,
     paddingTop: 20,
+    color: "#FFF",
   },
 });
 
