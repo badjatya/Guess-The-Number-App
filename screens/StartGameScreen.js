@@ -11,7 +11,7 @@ const StartGameScreen = (props) => {
       <Text style={styles.title}>Start Game!</Text>
       <Card style={styles.inputContainer}>
         <Text>Enter a Number</Text>
-        <Input />
+        <Input style={styles.inputField} />
         <View style={styles.buttonContainer}>
           <View>
             <Button
@@ -49,6 +49,10 @@ const styles = StyleSheet.create({
     width: 300,
     maxWidth: "80%",
     alignItems: "center",
+  },
+  inputField: {
+    width: 50,
+    textAlign: "center",
   },
   buttonContainer: {
     flexDirection: "row",
