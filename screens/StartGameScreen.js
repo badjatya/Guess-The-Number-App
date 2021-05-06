@@ -17,6 +17,7 @@ const StartGameScreen = (props) => {
           autoCapitalize="none"
           autoCorrect={false}
           keyboardType="numeric"
+          maxLength={2}
         />
         <View style={styles.buttonContainer}>
           <View>
