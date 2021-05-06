@@ -17,8 +17,9 @@ const StartGameScreen = (props) => {
   const [enteredValue, setEnteredValue] = useState("");
 
   const numberInputHandler = (inputText) => {
-    setEnteredValue(inputText);
+    setEnteredValue(inputText.replace(/[^0-9]/g, ""));
   };
+
   return (
     <TouchableWithoutFeedback
       onPress={() => {
@@ -36,7 +37,7 @@ const StartGameScreen = (props) => {
             autoCorrect={false}
             keyboardType="number-pad"
             maxLength={2}
-            onChange={(item) => numberInputHandler(item)}
+            onChangeText={numberInputHandler}
             value={enteredValue}
           />
           <View style={styles.buttonContainer}>
