@@ -11,7 +11,7 @@ const StartGameScreen = (props) => {
       <Text style={styles.title}>Start Game!</Text>
       <Card style={styles.inputContainer}>
         <Text>Enter a Number</Text>
-        <Input style={styles.inputField} />
+        <Input style={styles.inputField} blurOnSubmit />
         <View style={styles.buttonContainer}>
           <View>
             <Button
