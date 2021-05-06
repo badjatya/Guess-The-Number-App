@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { View, Text, Button, StyleSheet, TextInput } from "react-native";
 
 import Card from "../components/Card";
@@ -6,6 +6,7 @@ import Colors from "../constants/Colors";
 import Input from "../components/Input";
 
 const StartGameScreen = (props) => {
+  const [enteredValue, setEnteredValue] = useState("");
   return (
     <View style={styles.screen}>
       <Text style={styles.title}>Start Game!</Text>
