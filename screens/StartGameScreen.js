@@ -7,6 +7,10 @@ import Input from "../components/Input";
 
 const StartGameScreen = (props) => {
   const [enteredValue, setEnteredValue] = useState("");
+
+  const numberInputHandler = (inputText) => {
+    setEnteredValue(/[^0-9]/g, "");
+  };
   return (
     <View style={styles.screen}>
       <Text style={styles.title}>Start Game!</Text>
@@ -19,6 +23,7 @@ const StartGameScreen = (props) => {
           autoCorrect={false}
           keyboardType="number-pad"
           maxLength={2}
+          onChange={numberInputHandler}
         />
         <View style={styles.buttonContainer}>
           <View>
