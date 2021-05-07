@@ -20,6 +20,10 @@ const StartGameScreen = (props) => {
     setEnteredValue(inputText.replace(/[^0-9]/g, ""));
   };
 
+  const resetInputHandler = () => {
+    setEnteredValue("");
+  };
+
   return (
     <TouchableWithoutFeedback
       onPress={() => {
