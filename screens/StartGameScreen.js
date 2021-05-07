@@ -28,6 +28,10 @@ const StartGameScreen = (props) => {
   };
 
   const confirmInputHandler = () => {
+    const chosenNumber = parseInt(enteredValue);
+    if (chosenNumber === NaN || chosenNumber <= 0) {
+      return;
+    }
     setConfirmed(true);
     setEnteredValue("");
     setSelectedNumber(parseInt(enteredValue));
