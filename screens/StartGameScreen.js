@@ -50,7 +50,9 @@ const StartGameScreen = (props) => {
                 style={StyleSheet.button}
                 title="Reset"
                 color={Colors.secondary}
-                onPress={() => {}}
+                onPress={() => {
+                  resetInputHandler;
+                }}
               />
             </View>
             <View>
