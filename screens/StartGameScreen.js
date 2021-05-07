@@ -23,6 +23,7 @@ const StartGameScreen = (props) => {
 
   const resetInputHandler = () => {
     setEnteredValue("");
+    setConfirmed(false);
   };
 
   const confirmInputHandler = () => {
