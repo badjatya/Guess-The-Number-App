@@ -34,7 +34,7 @@ const StartGameScreen = (props) => {
     }
     setConfirmed(true);
     setEnteredValue("");
-    setSelectedNumber(parseInt(enteredValue));
+    setSelectedNumber();
   };
 
   return (
