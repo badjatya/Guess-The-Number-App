@@ -25,6 +25,10 @@ const StartGameScreen = (props) => {
     setEnteredValue("");
   };
 
+  const confirmInputHandler = () => {
+    setConfirmed(true);
+  };
+
   return (
     <TouchableWithoutFeedback
       onPress={() => {
