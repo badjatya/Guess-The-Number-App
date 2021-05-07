@@ -33,8 +33,8 @@ const StartGameScreen = (props) => {
       return;
     }
     setConfirmed(true);
+    setSelectedNumber(chosenNumber);
     setEnteredValue("");
-    setSelectedNumber();
   };
 
   return (
