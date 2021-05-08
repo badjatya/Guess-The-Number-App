@@ -81,6 +81,7 @@ const StartGameScreen = (props) => {
             </View>
           </View>
         </Card>
+        {confirmedOutput}
       </View>
     </TouchableWithoutFeedback>
   );
