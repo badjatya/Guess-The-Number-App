@@ -37,6 +37,11 @@ const StartGameScreen = (props) => {
     setEnteredValue("");
   };
 
+  let confirmedOutput;
+  if (confirmed) {
+    confirmedOutput = true;
+  }
+
   return (
     <TouchableWithoutFeedback
       onPress={() => {
