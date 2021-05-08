@@ -124,6 +124,9 @@ const styles = StyleSheet.create({
     width: 100,
     flex: 1,
   },
+  summaryContainer: {
+    marginTop: 20,
+  },
 });
 
 export default StartGameScreen;
