@@ -1,3 +1,8 @@
 import React from "react";
-import {} from "react-native";
+import {View, Text, StyleSheet} from "react-native";
 
+const NumberContainer = props => {
+    <View></View>
+}
+
+export default NumberContainer;
