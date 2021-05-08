@@ -5,4 +5,8 @@ const NumberContainer = props => {
     <View></View>
 }
 
+const styles = StyleSheet.create({
+    container:{}
+})
+
 export default NumberContainer;
