@@ -44,7 +44,7 @@ const StartGameScreen = (props) => {
   let confirmedOutput;
   if (confirmed) {
     confirmedOutput = (
-      <Card>
+      <Card style={styles.summaryContainer}>
         <Text>Chosen Number: {selectedNumber}</Text>
       </Card>
     );
