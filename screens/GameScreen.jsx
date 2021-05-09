@@ -3,8 +3,12 @@ import {Text, View, StyleSheet} from "react-native";
 
 const GameScreen = (props) => {
     return (
-        <View ></View>
+        <View style={styles.container}></View>
     )
 };
+
+const styles = StyleSheet.create({
+    container:{},
+})
 
 export default GameScreen;
