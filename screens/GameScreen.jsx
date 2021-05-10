@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Text, View, StyleSheet, Button } from "react-native";
+import { Text, View, StyleSheet, Button, Alert } from "react-native";
 
 import NumberContainer from "../components/NumberContainer";
 import Card from "../components/Card";
@@ -26,6 +26,11 @@ const GameScreen = (props) => {
       (direction === "lower" && currentGuess < props.userChoice) ||
       (direction === "greater" && currentGuess > props.userChoice)
     ) {
+      Alert.alert("Don't Lie!", "You know that this is wrong...", [
+        { text: "Sorry!", style: "cancel" },
+      ]);
+
+      return;
     }
   };
 
