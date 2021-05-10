@@ -4,13 +4,14 @@ import { StyleSheet, View } from "react-native";
 
 import Header from "./components/Header";
 import StartGameScreen from "./screens/StartGameScreen";
+import GameScreen from "./screens/GameScreen";
 
 const App = () => {
   return (
     <View style={styles.container}>
       <Header title="Guess The Number" />
       <StartGameScreen />
-      <StatusBar style="auto" />
+      <GameScreen />
     </View>
   );
 };
