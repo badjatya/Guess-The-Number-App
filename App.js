@@ -6,11 +6,22 @@ import StartGameScreen from "./screens/StartGameScreen";
 import GameScreen from "./screens/GameScreen";
 
 const App = () => {
+  const [userNumber, setUserNumber] = useState();
+
+  const startGameHandler = (selectedNumber) => {
+    setUserNumber(selectedNumber);
+  };
+
+  let content = <StartGameScreen />;
+
+  if (userNumber) {
+    content = <GameScreen />;
+  }
+
   return (
     <View style={styles.container}>
       <Header title="Guess The Number" />
-      <StartGameScreen />
-      <GameScreen />
+      {content}
     </View>
   );
 };
