@@ -33,7 +33,11 @@ const GameScreen = (props) => {
 };
 
 const styles = StyleSheet.create({
-  screen: {},
+  screen: {
+    flex: 1,
+    padding: 10,
+    alignItems: "center",
+  },
 });
 
 export default GameScreen;
