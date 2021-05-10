@@ -15,7 +15,7 @@ const App = () => {
   let content = <StartGameScreen onStartGame={startGameHandler} />;
 
   if (userNumber) {
-    content = <GameScreen />;
+    content = <GameScreen userChoice={userNumber} />;
   }
 
   return (

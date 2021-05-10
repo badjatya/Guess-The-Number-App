@@ -20,6 +20,9 @@ const GameScreen = (props) => {
   const [currentGuess, setCurrentGuess] = useState(
     generateRandomBetween(1, 100, props.userChoice)
   );
+
+  const nextGuessHandler = (direction) => {};
+
   return (
     <View style={styles.screen}>
       <Text>Opponent's Guess</Text>
