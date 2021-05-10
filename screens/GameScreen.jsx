@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Text, View, StyleSheet, Button, Alert } from "react-native";
 
 import NumberContainer from "../components/NumberContainer";
@@ -23,6 +23,8 @@ const GameScreen = (props) => {
 
   const currentLow = useRef(1);
   const currentHigh = useRef(100);
+
+  useEffect();
 
   const nextGuessHandler = (direction) => {
     if (
