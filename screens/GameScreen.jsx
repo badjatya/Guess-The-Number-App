@@ -21,7 +21,13 @@ const GameScreen = (props) => {
     generateRandomBetween(1, 100, props.userChoice)
   );
 
-  const nextGuessHandler = (direction) => {};
+  const nextGuessHandler = (direction) => {
+    if (
+      (direction === "lower" && currentGuess < props.userChoice) ||
+      (direction === "greater" && currentGuess > props.userChoice)
+    ) {
+    }
+  };
 
   return (
     <View style={styles.screen}>
