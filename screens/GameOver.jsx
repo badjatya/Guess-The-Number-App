@@ -1,5 +1,6 @@
 import React from "react";
 import { View, Text, StyleSheet, Button } from "react-native";
+import CustomButton from "../components/CustomButton";
 
 const GameOver = (props) => {
   return (
