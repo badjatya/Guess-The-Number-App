@@ -24,6 +24,7 @@ const styles = StyleSheet.create({
   },
   button: {
     backgroundColor: Colors.primary,
+    marginVertical: 10,
   },
 });
 
