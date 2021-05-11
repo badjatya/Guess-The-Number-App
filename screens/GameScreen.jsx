@@ -66,7 +66,7 @@ const GameScreen = (props) => {
   return (
     <View style={styles.screen}>
       <Image style={styles.image} source={require("../assets/game.png")} />
-      <Text>Opponent's Guess</Text>
+      <Text>Computer's Guess</Text>
       <NumberContainer>{currentGuess}</NumberContainer>
       <Card style={styles.buttonContainer}>
         <CustomButton
