@@ -8,8 +8,8 @@ import Card from "../components/Card";
 const GameOver = (props) => {
   return (
     <View style={styles.screen}>
+      <Text style={styles.title}>The Game is Over!</Text>
       <Card style={styles.card}>
-        <Text>The Game is Over!</Text>
         <Text>Number of rounds: {props.roundsNumber}</Text>
         <Text>Number was: {props.userNumber}</Text>
         <CustomButton style={styles.button} onPress={props.onRestart}>
@@ -35,6 +35,11 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 10,
     alignItems: "center",
+    justifyContent: "center",
+  },
+  title: {
+    fontSize: 20,
+    marginVertical: 10,
   },
 });
 
