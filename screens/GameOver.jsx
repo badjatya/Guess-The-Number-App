@@ -5,7 +5,8 @@ const GameOver = (props) => {
   return (
     <View style={styles.screen}>
       <Text>The Game is Over!</Text>
-      <Text>Number of rounds</Text>
+      <Text>Number of rounds: {props.roundNumber}</Text>
+      <Text>Number was: {props.userNumber}</Text>
     </View>
   );
 };

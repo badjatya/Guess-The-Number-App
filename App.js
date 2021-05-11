@@ -26,7 +26,7 @@ const App = () => {
       <GameScreen userChoice={userNumber} onGameOver={gameOverHandler} />
     );
   } else if (guessRounds > 0) {
-    content = <GameOver />;
+    content = <GameOver roundsNumber={guessRounds} userNumber={userNumber} />;
   }
 
   return (
