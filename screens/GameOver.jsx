@@ -23,7 +23,7 @@ const GameOver = (props) => {
 
 const styles = StyleSheet.create({
   button: {
-    backgroundColor: Colors.primary,
+    backgroundColor: Colors.secondary,
     marginVertical: 10,
   },
   card: {
