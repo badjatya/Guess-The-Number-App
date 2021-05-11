@@ -138,6 +138,7 @@ const styles = StyleSheet.create({
   },
   reset: {
     backgroundColor: Colors.secondary,
+    marginBottom: 10,
   },
   confirm: {
     backgroundColor: Colors.primary,
