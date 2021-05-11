@@ -12,8 +12,16 @@ const CustomButton = (props) => {
 };
 
 const styles = StyleSheet.create({
-  button: {},
-  buttonText: {},
+  button: {
+    backgroundColor: "green",
+    paddingVertical: 12,
+    paddingHorizontal: 25,
+    borderRadius: 25,
+  },
+  buttonText: {
+    color: "white",
+    fontSize: 18,
+  },
 });
 
 export default CustomButton;
