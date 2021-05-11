@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Text, View, StyleSheet, Button, Alert, Image } from "react-native";
+import { Text, View, StyleSheet, Alert, Image } from "react-native";
 
 import NumberContainer from "../components/NumberContainer";
 import Card from "../components/Card";
