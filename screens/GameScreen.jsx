@@ -100,6 +100,7 @@ const styles = StyleSheet.create({
   },
   lower: {
     backgroundColor: Colors.secondary,
+    marginBottom: 10,
   },
   greater: {
     backgroundColor: Colors.primary,
