@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Text, StyleSheet, Button } from "react-native";
 import CustomButton from "../components/CustomButton";
+import Colors from "../constants/Colors";
 
 const GameOver = (props) => {
   return (
@@ -8,7 +9,9 @@ const GameOver = (props) => {
       <Text>The Game is Over!</Text>
       <Text>Number of rounds: {props.roundsNumber}</Text>
       <Text>Number was: {props.userNumber}</Text>
-      <Button title="NEW GAME" onPress={props.onRestart} />
+      <CustomButton style={styles.button} onPress={props.onRestart}>
+        NEW GAME
+      </CustomButton>
     </View>
   );
 };
@@ -18,6 +21,9 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
+  },
+  button: {
+    backgroundColor: Colors.primary,
   },
 });
 
