@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Text, View, StyleSheet, Button, Alert } from "react-native";
+import { Text, View, StyleSheet, Button, Alert, Image } from "react-native";
 
 import NumberContainer from "../components/NumberContainer";
 import Card from "../components/Card";
@@ -65,6 +65,7 @@ const GameScreen = (props) => {
 
   return (
     <View style={styles.screen}>
+      <Image style={styles.image} source={require("../assets/game.png")} />
       <Text>Opponent's Guess</Text>
       <NumberContainer>{currentGuess}</NumberContainer>
       <Card style={styles.buttonContainer}>
@@ -87,7 +88,6 @@ const GameScreen = (props) => {
 
 const styles = StyleSheet.create({
   screen: {
-    flex: 1,
     padding: 10,
     alignItems: "center",
     justifyContent: "center",
@@ -105,6 +105,10 @@ const styles = StyleSheet.create({
   },
   greater: {
     backgroundColor: Colors.primary,
+  },
+  image: {
+    width: 400,
+    height: 300,
   },
 });
 
