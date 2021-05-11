@@ -4,9 +4,9 @@
     "slug": "Numeron",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/Game2.png",
+    "icon": "./assets/game3.png",
     "splash": {
-      "image": "./assets/Game2.png",
+      "image": "./assets/game3.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -21,12 +21,13 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/Game2.png",
+        "foregroundImage": "./assets/game3.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.badjatya.Numeron"
     },
     "web": {
-      "favicon": "./assets/Game2.png"
+      "favicon": "./assets/game3.png"
     }
   }
 }
