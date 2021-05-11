@@ -13,6 +13,7 @@ import Card from "../components/Card";
 import Colors from "../constants/Colors";
 import Input from "../components/Input";
 import NumberContainer from "../components/NumberContainer";
+import CustomButton from "../components/CustomButton";
 
 const StartGameScreen = (props) => {
   const [enteredValue, setEnteredValue] = useState("");
@@ -48,10 +49,12 @@ const StartGameScreen = (props) => {
       <Card style={styles.summaryContainer}>
         <Text>You Selected</Text>
         <NumberContainer>{selectedNumber}</NumberContainer>
-        <Button
-          title="START GAME"
+        <CustomButton
+          style={styles.customButton}
           onPress={() => props.onStartGame(selectedNumber)}
-        />
+        >
+          START GAME
+        </CustomButton>
       </Card>
     );
   }
@@ -78,20 +81,17 @@ const StartGameScreen = (props) => {
           />
           <View style={styles.buttonContainer}>
             <View>
-              <Button
-                style={StyleSheet.button}
-                title="Reset"
-                color={Colors.secondary}
-                onPress={resetInputHandler}
-              />
+              <CustomButton style={styles.reset} onPress={resetInputHandler}>
+                RESET
+              </CustomButton>
             </View>
             <View>
-              <Button
-                style={StyleSheet.button}
-                title="Confirm"
-                color={Colors.primary}
+              <CustomButton
+                style={styles.confirm}
                 onPress={confirmInputHandler}
-              />
+              >
+                CONFIRM
+              </CustomButton>
             </View>
           </View>
         </Card>
@@ -121,7 +121,6 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   buttonContainer: {
-    flexDirection: "row",
     width: "100%",
     justifyContent: "space-evenly",
     paddingHorizontal: 15,
@@ -133,6 +132,15 @@ const styles = StyleSheet.create({
   summaryContainer: {
     marginTop: 20,
     alignItems: "center",
+  },
+  customButton: {
+    backgroundColor: Colors.primary,
+  },
+  reset: {
+    backgroundColor: Colors.secondary,
+  },
+  confirm: {
+    backgroundColor: Colors.primary,
   },
 });
 

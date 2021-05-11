@@ -2,13 +2,15 @@ import React from "react";
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 
 const CustomButton = (props) => {
-  <TouchableOpacity onPress={props.onPress}>
-    <View style={{ ...styles.button, ...props.style }}>
-      <Text style={{ ...styles.buttonText, ...props.textStyling }}>
-        {props.children}
-      </Text>
-    </View>
-  </TouchableOpacity>;
+  return (
+    <TouchableOpacity onPress={props.onPress}>
+      <View style={{ ...styles.button, ...props.style }}>
+        <Text style={{ ...styles.buttonText, ...props.textStyling }}>
+          {props.children}
+        </Text>
+      </View>
+    </TouchableOpacity>
+  );
 };
 
 const styles = StyleSheet.create({
@@ -17,10 +19,12 @@ const styles = StyleSheet.create({
     paddingVertical: 12,
     paddingHorizontal: 25,
     borderRadius: 25,
+    marginBottom: 10,
   },
   buttonText: {
     color: "white",
     fontSize: 18,
+    textAlign: "center",
   },
 });
 
